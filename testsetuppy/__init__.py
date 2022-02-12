@@ -2,7 +2,13 @@
 while using pip-tools and setup.py.
 """
 
-__version__ = "0.0.2"
+from importlib.metadata import PackageNotFoundError, version
+
+try:
+    __version__ = version("test-setup-py")
+except PackageNotFoundError:
+    # package is not installed
+    pass
 
 
 import logging
