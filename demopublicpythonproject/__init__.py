@@ -8,7 +8,7 @@ try:
     __version__ = version("demo-public-python-project")
 except PackageNotFoundError:
     # package is not installed
-    pass
+    __version__ = "0.0.1"
 
 
 import logging
