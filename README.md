@@ -36,7 +36,7 @@ pip install -e .
 Now run
 
 ```
-python -m {{ cookiecutter.project_slug }}
+python -m demopublicpythonproject
 ```
 
 ## Expected Output
